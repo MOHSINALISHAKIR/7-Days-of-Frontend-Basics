@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.name{
+    font-size: 38px;
+    font-weight: bold;
+    padding:6px;
+    margin-top: 10px;
+
+}
+.stack{
+text-transform:uppercase;
+color: rgb(9, 106, 141);
+    padding:6px;
+
+}
+.contact{
+display:flex;
+gap: 20px;
+margin-bottom: 4px;
+margin-left: 5px;
+}
+.summary{
+    margin-top: 10px;
+    padding:6px;
+}
+.experience{
+    margin-top: 10px;
+    padding:6px;
+    
+}
+.skills{
+    margin-top: 10px;
+    padding:6px;
+}
+ul{
+    display:flex;
+    gap:26px
+}
+ul li{
+    list-style: none;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+h2{
+    font-size: 30px;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+
+.education{
+    margin-top: 10px;
+    padding:6px;
+}
+h5{
+    text-align: center;
+    font-size: 18px;
+}
+p{
+    line-height: 22px;
+}
