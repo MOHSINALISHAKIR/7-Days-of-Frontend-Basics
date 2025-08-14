@@ -1,8 +1,7 @@
-div{
+/* div{
     width: 100px;
     height: 100px;
     background-color: green;
-    /* margin: 2px; */
     display: inline-block;
 }
 #static{
@@ -30,4 +29,64 @@ div{
     background-color: red;
     top:20px;
     position: fixed;
+} */
+/* flex start here.... */
+div{
+    width: 150px;
+    height: 150px;
+}
+h2{
+    text-align: center;
+}
+.container{
+    width: 800px;
+    height: 300px;
+    background-color:#a1a95e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto
+}
+.color1{
+    background-color: #3d550c;
+}
+.color2{
+    background-color: #81b622;
+}
+.color3{
+    background-color: #ecf87f;
+}
+.color4{
+    background-color: #59981a;
+}
+.container1{
+    width: 800px;
+    height: 300px;
+    background-color: skyblue;
+    display:flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    
+}
+.start{
+    align-self: flex-end;
+    width: 100px;
+    height: 100px;
+}
+.start1{
+    width: 100px;
+    height: 100px;
+    align-self: flex-start;
+}
+.start2{
+    align-self:flex-end;
+    width: 100px;
+    height: 100px;
+}
+.start3{
+align-self: flex-start;
+width: 100px;
+height: 100px;
 }
