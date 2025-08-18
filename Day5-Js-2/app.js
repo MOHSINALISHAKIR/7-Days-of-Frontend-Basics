@@ -46,33 +46,55 @@ do while loop
 // for(let i=0;i<fruits.length;i++){
 //     console.log(i,fruits[i])
 // }
-let todo=[];
-let req= prompt("What You Want")
-while(true){
-    if(req == 'quit'){
-        console.log("quiting the app")
-        break;
-    }
-    if(req =='list'){
-        console.log("---------------")
+// let todo=[];
+// let req= prompt("What You Want")
+// while(true){
+//     if(req == 'quit'){
+//         console.log("quiting the app")
+//         break;
+//     }
+//     if(req =='list'){
+//         console.log("---------------")
 
-        for (const task of todo) {
-            console.log(task)
+//         for (const task of todo) {
+//             console.log(task)
             
-        }
-        console.log("------------------")
-    }else if(req =='add'){
-        let task = prompt("What task U want to add");
-        todo.push(task);
-        console.log("task added")
-    }else if(req =='delete')
-    {
-        let task = prompt("which index task u want to delete");
-        todo.splice(task,1)
-        console.log("task deleted")
-    }else{
-        console.log("wrong request")
-    }
-    req=prompt("what u want");
+//         }
+//         console.log("------------------")
+//     }else if(req =='add'){
+//         let task = prompt("What task U want to add");
+//         todo.push(task);
+//         console.log("task added")
+//     }else if(req =='delete')
+//     {
+//         let task = prompt("which index task u want to delete");
+//         todo.splice(task,1)
+//         console.log("task deleted")
+//     }else{
+//         console.log("wrong request")
+//     }
+//     req=prompt("what u want");
 
-}
+// }
+// arrays and its methos
+let cars = ['honda','alto','mehran','bmw']
+//push method
+cars.push("civic")
+//pop method
+cars.pop()
+//unshift method
+cars.unshift("civic")
+//shift
+cars.shift()
+//indexOf method
+let primary = ['red','green','black']
+console.log(primary.indexOf("green"))
+//concat 
+let arr1 =['red','green','pink','orange']
+let arr2 =['yellow','black']
+console.log(arr1.concat(arr2))
+//reverse method
+console.log(arr1.reverse())
+//slice method
+console.log(arr1.slice(2))
+
