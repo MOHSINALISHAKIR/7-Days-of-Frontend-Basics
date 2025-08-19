@@ -106,3 +106,13 @@ function table(n){
     }
 }
 table(5)
+// function that sum from 1 to n
+ function sum(n){
+    let sum = 0;
+    for(let i=1;i<=n;i++){
+        sum=sum+i;
+    }
+    return sum;
+ }
+ let sum1 = sum(6)
+ console.log(sum1)
