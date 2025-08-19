@@ -68,13 +68,28 @@
 // let Num = Math.floor(Math.random()*5)+1;
 // console.log(Num)
 
-let num = Math.floor(Math.random() *50 )+1;
-if(num >=10){
-    console.log(`please try again no greater than this `)
-}else if( num <= 30){
-    console.log("please try agian")
-}else if( num >=30 || num <=40){
-    console.log("congrats")
-}else{
-    console.log("error")
+// let num = Math.floor(Math.random() *50 )+1;
+// if(num >=10){
+//     console.log(`please try again no greater than this `)
+// }else if( num <= 30){
+//     console.log("please try agian")
+// }else if( num >=30 || num <=40){
+//     console.log("congrats")
+// }else{
+//     console.log("error")
+// }
+// Functions in javascript
+// piece of code that reuseable any where.
+
+function hello(){
+    console.log("hello world")
 }
+// hello()
+ 
+// practice question 
+
+function randomNumber(){
+    let Num = Math.floor(Math.random()*6)+1;
+    console.log(Num)
+}
+randomNumber()
