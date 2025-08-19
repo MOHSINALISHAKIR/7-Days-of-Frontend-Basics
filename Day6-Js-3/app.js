@@ -115,4 +115,10 @@ table(5)
     return sum;
  }
  let sum1 = sum(6)
- console.log(sum1)
+ 
+setInterval(()=>{
+    console.log("hello pakistan")
+},3000)
+setTimeout(() => {
+    console.log("mohsin")
+}, 3000);
