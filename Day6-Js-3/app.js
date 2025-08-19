@@ -93,3 +93,16 @@ function randomNumber(){
     console.log(Num)
 }
 randomNumber()
+// function with arguments that calculate the average of three numbers
+function average(a,b,c){
+    let sum = (a+b+c)/3;
+    console.log(sum)
+}
+average(3,5,4)
+// function that print table of any number
+function table(n){
+    for(let i=1;i<=10;i++){
+        console.log(`${i} * ${n} = ${i*n}`)
+    }
+}
+table(5)
