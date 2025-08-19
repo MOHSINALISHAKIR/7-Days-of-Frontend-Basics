@@ -81,44 +81,73 @@
 // Functions in javascript
 // piece of code that reuseable any where.
 
-function hello(){
-    console.log("hello world")
-}
+// function hello(){
+//     console.log("hello world")
+// }
 // hello()
  
 // practice question 
 
-function randomNumber(){
-    let Num = Math.floor(Math.random()*6)+1;
-    console.log(Num)
-}
-randomNumber()
-// function with arguments that calculate the average of three numbers
-function average(a,b,c){
-    let sum = (a+b+c)/3;
-    console.log(sum)
-}
-average(3,5,4)
-// function that print table of any number
-function table(n){
-    for(let i=1;i<=10;i++){
-        console.log(`${i} * ${n} = ${i*n}`)
-    }
-}
-table(5)
-// function that sum from 1 to n
- function sum(n){
-    let sum = 0;
-    for(let i=1;i<=n;i++){
-        sum=sum+i;
-    }
-    return sum;
- }
- let sum1 = sum(6)
+// function randomNumber(){
+//     let Num = Math.floor(Math.random()*6)+1;
+//     console.log(Num)
+// }
+// randomNumber()
+// // function with arguments that calculate the average of three numbers
+// function average(a,b,c){
+//     let sum = (a+b+c)/3;
+//     console.log(sum)
+// }
+// average(3,5,4)
+// // function that print table of any number
+// function table(n){
+//     for(let i=1;i<=10;i++){
+//         console.log(`${i} * ${n} = ${i*n}`)
+//     }
+// }
+// table(5)
+// // function that sum from 1 to n
+//  function sum(n){
+//     let sum = 0;
+//     for(let i=1;i<=n;i++){
+//         sum=sum+i;
+//     }
+//     return sum;
+//  }
+//  let sum1 = sum(6)
  
-setInterval(()=>{
-    console.log("hello pakistan")
-},3000)
-setTimeout(() => {
-    console.log("mohsin")
-}, 3000);
+// setInterval(()=>{
+//     console.log("hello pakistan")
+// },3000)
+// setTimeout(() => {
+//     console.log("mohsin")
+// }, 3000);
+
+
+//  Array Methods
+// ForEach Method
+ let arr =[1,2,3,4,5]
+ arr.forEach((el)=>{
+    console.log(el)
+ })
+ // Map Method
+ let arr1 = [1,2,3,4,5]
+ let double= arr1.map((el)=>{
+    return el*2;
+ })
+ // Filter Method
+ let nums =[2,3,4,5,6,7,8,8,9]
+ let even = nums.filter((el)=>{
+    return el%2==0
+ })
+
+ // Every Method
+ let num=[2,3,4,6,8]
+ let everyEven= num.every((el)=>{
+    return el%2==0
+ })
+ 
+ console.log(everyEven)
+
+
+
