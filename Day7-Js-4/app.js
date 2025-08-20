@@ -77,16 +77,56 @@
 // }
 
 // Call Stack
-function hello(){
-    console.log('Inside the Hello Function')
-    console.log('Hello')
+// function hello(){
+//     console.log('Inside the Hello Function')
+//     console.log('Hello')
+// }
+// function demo(){
+//     console.log('Inside the Demo Function')
+//     console.log('Hello')
+//     hello()
+// }
+// console.log('Before Calling Demo Function')
+// demo()
+// console.log("By!")
+// CallBack Hell
+ let h1= document.querySelector('h1')
+ setTimeout(() => {
+    h1.style.color='red'
+    
+ },1000);
+ setTimeout(() => {
+    h1.style.color='blue'
+    
+ },2000);
+ setTimeout(() => {
+    h1.style.color='black'
+    
+ },3000);
+function changeColor(Color,delay){
+    setTimeout(()=>{
+        h1.style.color=Color;
+    },delay)
 }
-function demo(){
-    console.log('Inside the Demo Function')
-    console.log('Hello')
-    hello()
+
+changeColor('red',1000)
+changeColor('blue',2000)
+changeColor('black',3000)
+
+function changeColor(color,delay,nextColorChange){
+    setTimeout(()=>{
+        h1.style.color=color;
+        if(nextColorChange) nextColorChange()
+    },delay)
 }
-console.log('Before Calling Demo Function')
-demo()
-console.log("By!")
+changeColor('red',2000,()=>{
+    changeColor('green',2000,()=>{
+        changeColor('yellow',2000)
+    })
+})
+
+
+
+
+
 
