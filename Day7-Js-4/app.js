@@ -51,7 +51,27 @@
 
 // body1.appendChild(addDiv)
 
+// let btn = document.querySelector('button')
+// btn.onclick = function (){
+//     console.log("btn")
+// }
+
+// practice question
+
+
 let btn = document.querySelector('button')
-btn.onclick = function (){
-    console.log("btn")
+btn.addEventListener('click',()=>{
+    let random = getRandom();
+    let h3 = document.querySelector('h3');
+    h3.innerText=random;
+    let div1 = document.querySelector('div');
+    div1.style.backgroundColor= random;
+})
+function getRandom (){
+    let red = Math.floor(Math.random()*255);
+    let green = Math.floor(Math.random()*255);
+    let blue = Math.floor(Math.random()*255);
+    let colors = `rgb(${red},${green},${blue})`;
+    return colors;
+
 }
