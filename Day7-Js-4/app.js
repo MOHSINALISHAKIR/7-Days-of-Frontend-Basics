@@ -90,40 +90,65 @@
 // demo()
 // console.log("By!")
 // CallBack Hell
- let h1= document.querySelector('h1')
- setTimeout(() => {
-    h1.style.color='red'
+//  let h1= document.querySelector('h1')
+//  setTimeout(() => {
+//     h1.style.color='red'
     
- },1000);
- setTimeout(() => {
-    h1.style.color='blue'
+//  },1000);
+//  setTimeout(() => {
+//     h1.style.color='blue'
     
- },2000);
- setTimeout(() => {
-    h1.style.color='black'
+//  },2000);
+//  setTimeout(() => {
+//     h1.style.color='black'
     
- },3000);
-function changeColor(Color,delay){
-    setTimeout(()=>{
-        h1.style.color=Color;
-    },delay)
-}
+//  },3000);
+// function changeColor(Color,delay){
+//     setTimeout(()=>{
+//         h1.style.color=Color;
+//     },delay)
+// }
 
-changeColor('red',1000)
-changeColor('blue',2000)
-changeColor('black',3000)
+// changeColor('red',1000)
+// changeColor('blue',2000)
+// changeColor('black',3000)
 
-function changeColor(color,delay,nextColorChange){
-    setTimeout(()=>{
-        h1.style.color=color;
-        if(nextColorChange) nextColorChange()
-    },delay)
-}
-changeColor('red',2000,()=>{
-    changeColor('green',2000,()=>{
-        changeColor('yellow',2000)
+// function changeColor(color,delay,nextColorChange){
+//     setTimeout(()=>{
+//         h1.style.color=color;
+//         if(nextColorChange) nextColorChange()
+//     },delay)
+// }
+// changeColor('red',2000,()=>{
+//     changeColor('green',2000,()=>{
+//         changeColor('yellow',2000)
+//     })
+// })
+// promise in JS
+ function saveToDb (data,success,failure){
+    let interSpeed = Math.floor(Math.random()*6)+1
+    if(interSpeed>4){
+        success()
+    }else{
+        failure()
+    }
+
+ }
+ saveToDb('pakistan',()=>{
+    console.log('success1');
+    saveToDb('lahore',()=>{
+        console.log('success2')
+        saveToDb('kasur',()=>{
+            console.log('success3')
+        },()=>{
+            console.log('faliure3')
+        })
+    },()=>{
+        console.log('faliure2')
     })
-})
+ },()=>{
+    console.log('failure1')
+ })
 
 
 
