@@ -26,27 +26,32 @@
 
 // paratice question
 
-let body1 = document.querySelector('body')
-let para1 = document.createElement('p')
-para1.innerText='Hy , i am Red'
-para1.style.color='red';
+// let body1 = document.querySelector('body')
+// let para1 = document.createElement('p')
+// para1.innerText='Hy , i am Red'
+// para1.style.color='red';
 
-body1.appendChild(para1)
+// body1.appendChild(para1)
 
-let heading1 = document.createElement('h3')
-heading1.innerText='hi i am blue'
-heading1.style.color='blue'
-body1.appendChild(heading1)
+// let heading1 = document.createElement('h3')
+// heading1.innerText='hi i am blue'
+// heading1.style.color='blue'
+// body1.appendChild(heading1)
 
-let addDiv = document.createElement('div')
-let heading2 = document.createElement('h1')
-heading2.innerText='i am inside a div'
-addDiv.appendChild(heading2)
-let alink = document.createElement('a')
-alink.innerText='i am also in div'
-addDiv.appendChild(alink)
+// let addDiv = document.createElement('div')
+// let heading2 = document.createElement('h1')
+// heading2.innerText='i am inside a div'
+// addDiv.appendChild(heading2)
+// let alink = document.createElement('a')
+// alink.innerText='i am also in div'
+// addDiv.appendChild(alink)
 
-addDiv.style.backgroundColor='pink'
-addDiv.style.border='black'
+// addDiv.style.backgroundColor='pink'
+// addDiv.style.border='black'
 
-body1.appendChild(addDiv)
+// body1.appendChild(addDiv)
+
+let btn = document.querySelector('button')
+btn.onclick = function (){
+    console.log("btn")
+}
