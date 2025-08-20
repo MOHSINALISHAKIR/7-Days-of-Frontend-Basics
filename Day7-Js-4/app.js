@@ -59,19 +59,34 @@
 // practice question
 
 
-let btn = document.querySelector('button')
-btn.addEventListener('click',()=>{
-    let random = getRandom();
-    let h3 = document.querySelector('h3');
-    h3.innerText=random;
-    let div1 = document.querySelector('div');
-    div1.style.backgroundColor= random;
-})
-function getRandom (){
-    let red = Math.floor(Math.random()*255);
-    let green = Math.floor(Math.random()*255);
-    let blue = Math.floor(Math.random()*255);
-    let colors = `rgb(${red},${green},${blue})`;
-    return colors;
+// let btn = document.querySelector('button')
+// btn.addEventListener('click',()=>{
+//     let random = getRandom();
+//     let h3 = document.querySelector('h3');
+//     h3.innerText=random;
+//     let div1 = document.querySelector('div');
+//     div1.style.backgroundColor= random;
+// })
+// function getRandom (){
+//     let red = Math.floor(Math.random()*255);
+//     let green = Math.floor(Math.random()*255);
+//     let blue = Math.floor(Math.random()*255);
+//     let colors = `rgb(${red},${green},${blue})`;
+//     return colors;
 
+// }
+
+// Call Stack
+function hello(){
+    console.log('Inside the Hello Function')
+    console.log('Hello')
 }
+function demo(){
+    console.log('Inside the Demo Function')
+    console.log('Hello')
+    hello()
+}
+console.log('Before Calling Demo Function')
+demo()
+console.log("By!")
+
