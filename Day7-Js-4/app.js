@@ -125,32 +125,49 @@
 //     })
 // })
 // promise in JS
- function saveToDb (data,success,failure){
-    let interSpeed = Math.floor(Math.random()*6)+1
-    if(interSpeed>4){
-        success()
-    }else{
-        failure()
-    }
+//  function saveToDb (data,success,failure){
+//     let interSpeed = Math.floor(Math.random()*6)+1
+//     if(interSpeed>4){
+//         success()
+//     }else{
+//         failure()
+//     }
 
- }
- saveToDb('pakistan',()=>{
-    console.log('success1');
-    saveToDb('lahore',()=>{
-        console.log('success2')
-        saveToDb('kasur',()=>{
-            console.log('success3')
-        },()=>{
-            console.log('faliure3')
-        })
-    },()=>{
-        console.log('faliure2')
+//  }
+//  saveToDb('pakistan',()=>{
+//     console.log('success1');
+//     saveToDb('lahore',()=>{
+//         console.log('success2')
+//         saveToDb('kasur',()=>{
+//             console.log('success3')
+//         },()=>{
+//             console.log('faliure3')
+//         })
+//     },()=>{
+//         console.log('faliure2')
+//     })
+//  },()=>{
+//     console.log('failure1')
+//  })
+
+ function getNum (){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            let num = Math.floor(Math.random()*6)+1;
+            console.log(num)
+              resolve()
+        },1000)
+      
     })
- },()=>{
-    console.log('failure1')
- })
-
-
+ }
+  async function demo() {
+    await getNum();
+    await getNum();
+    await getNum();
+    await getNum();
+    await getNum();
+    
+  }
 
 
 
